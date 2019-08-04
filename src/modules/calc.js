@@ -1,4 +1,5 @@
 //Калькулятор
+import {checkNumber} from "./check";
 
 const calc = (price=100) => {
     const   calcBlock = document.querySelector('.calc-block'),
@@ -7,6 +8,20 @@ const calc = (price=100) => {
         calcDay = document.querySelector('.calc-day'),
         calcCount = document.querySelector('.calc-count'),
         totalValue = document.getElementById('total');
+
+    //Расчитать стоимость
+    const calcOnlyNumber = () => {
+        const calc = document.getElementById('calc');
+        calc.addEventListener('keydown', (event) => {
+            if(event.target.matches('input.calc-item')){
+                if(checkNumber(event.key) !== true){
+                    event.preventDefault();
+                    return false;
+                }
+            }
+        });
+    };
+    calcOnlyNumber();
 
     const countSum = () => {
         let showTotal = (ind) => {

@@ -1,5 +1,5 @@
 //send-ajax-form
-import {checkPhone, checkStringRu} from "./modules/check";
+import {checkPhone, checkStringRu} from "./check";
 const sendForm = (element) => {
     const   errorMessage = 'Что-то пошло не так...',
         loadMessage = 'Загрузка',

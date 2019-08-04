@@ -1,6 +1,5 @@
 'use strict';
 import countTimer from "./modules/countTimer";
-import calcOnlyNumber from "./modules/calcOnlyNumber";
 import calc from "./modules/calc";
 import changeImg from "./modules/changeImg";
 import sendForm from "./modules/sendForm";
@@ -26,9 +25,6 @@ slider();
 
 //Наша команда изменение фоток
 changeImg();
-
-//Расчитать стоимость
-calcOnlyNumber();
 
 //Калькулятор
 calc(100);
