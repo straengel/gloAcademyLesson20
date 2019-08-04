@@ -5,6 +5,7 @@ import '@babel/polyfill';
 import 'nodelist-foreach-polyfill';
 import 'es6-promise';
 import 'fetch-polyfill';
+import 'formdata-polyfill';
 import elemntClosest from 'element-closest';
 import countTimer from "./modules/countTimer";
 import calc from "./modules/calc";
