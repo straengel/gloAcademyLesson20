@@ -35,7 +35,7 @@ const calc = (price=100) => {
                 if(total === ind){
                     clearInterval(int);
                 }
-            }, 100);
+            }, 10);
         };
         let total = 0,
             typeValue = +calcType.options[calcType.selectedIndex].value,
